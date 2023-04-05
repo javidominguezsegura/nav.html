@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+	    font-family: 'Inter', sans-serif;
+      font-size: 16xºpx;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.navMenu a i {
+			margin-right: 5px;
+		}
+
+		.background {
+			background-color: #000000;
+		}
+
+		.border {
+			border: 1px solid #000000;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #e4665a;
+		}
+   
+    body {
+    background-color: #000000;
+    }
+
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects</a>
+    <a id="daily-stuff" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i> Daily Stuff</a>
+    <a id="thoughts" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-earth-americas"></i> Thoughts</a>
+    <a id="planning" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-compass"></i> Planning</a>
+    <a id="web-links" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-up-right-from-square"></i> Web Links </a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/javidominguez/Vita-Xonsilia-77ee17e9003443af8ff8fb495c177853?pvs=4#ab5947d435984461ba4604831752f6cf", '_blank').focus();
+      else if (id == 'projects')
+				window.open("https://www.notion.so/javidominguez/Real-Projects-729951794c734d50b924ed6aadec84bd?pvs=4#4ef2507ed3754db3bbf70afd2163048a", '_blank').focus();
+		  else if (id == 'daily-stuff')
+				window.open("https://www.notion.so/javidominguez/Daily-Stuff-2535ce6294f347e8ad9d6e0505b5055b?pvs=4", '_blank').focus();
+      else if (id == 'thoughts')
+				window.open("https://www.notion.so/javidominguez/Thoughts-2a102f4b0ef34d86a43f219e969ee798?pvs=4", '_blank').focus();
+      else if (id == 'planning')
+				window.open("https://www.notion.so/javidominguez/Objectives-f04fbf72bbfa4aa1aa6156e38f253bf5?pvs=4", '_blank').focus();
+      else if (id == 'web-links')
+				window.open("https://www.notion.so/javidominguez/Vita-Xonsilia-77ee17e9003443af8ff8fb495c177853?pvs=4#c8b7c37b46814f4a910c90134eae5473", '_blank').focus();
+		
+		}
+	</script>
+
+
+</body> 
+</html>
